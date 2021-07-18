@@ -18,16 +18,12 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: require.resolve("babel-loader"),
-        // use: "babel-loader",
       },
-      //   {
-      //     test: /\.html$/,
-      //     use: "html-loader",
-      //   },
-      //   {
-      //     test: /\.sass$/,
-      //     use: ["style-loader", "css-loader", "sass-loader"],
-      //   },
+
+      {
+        test: /\.css$/,
+        use: ["css-loader"],
+      },
     ],
   },
 };
